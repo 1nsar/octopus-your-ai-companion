@@ -7,6 +7,7 @@
     base: '/',
     build: {
       outDir: 'dist',
+      target: 'esnext',
     },
     plugins: [react()],
     resolve: {
@@ -52,10 +53,6 @@
         '@radix-ui/react-accordion@1.2.3': '@radix-ui/react-accordion',
         '@': path.resolve(__dirname, './src'),
       },
-    },
-    build: {
-      target: 'esnext',
-      outDir: 'build',
     },
     server: {
       port: 3000,
